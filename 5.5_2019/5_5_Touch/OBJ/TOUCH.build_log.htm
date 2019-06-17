@@ -1,0 +1,137 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1qaz 1qaz, 1qaz, LIC=GMZII-T1YMS-WFTI7-ELCUU-Q86HL-YQFCW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\dell\Documents\Tencent Files\2856180900\FileRecv\5_5_Touch\USER\TOUCH.uvprojx
+Project File Date:  05/17/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling led.c...
+compiling stm32f10x_it.c...
+compiling main.c...
+main.c(30): warning:  #177-D: variable "num_last"  was declared but never referenced
+  	u8 num,num_last,i=0,j=0,m=0;
+main.c(30): warning:  #177-D: variable "i"  was declared but never referenced
+  	u8 num,num_last,i=0,j=0,m=0;
+main.c(30): warning:  #177-D: variable "j"  was declared but never referenced
+  	u8 num,num_last,i=0,j=0,m=0;
+main.c(30): warning:  #177-D: variable "m"  was declared but never referenced
+  	u8 num,num_last,i=0,j=0,m=0;
+main.c(31): warning:  #177-D: variable "x_last"  was declared but never referenced
+  	u16 x_last[10]={0},y_last[10]={0};
+main.c(31): warning:  #177-D: variable "y_last"  was declared but never referenced
+  	u16 x_last[10]={0},y_last[10]={0};
+main.c(32): warning:  #177-D: variable "x0"  was declared but never referenced
+  	u16 x0[10]={0},y0[10]={0};
+main.c(32): warning:  #177-D: variable "y0"  was declared but never referenced
+  	u16 x0[10]={0},y0[10]={0};
+main.c(33): warning:  #177-D: variable "touch_sta"  was declared but never referenced
+  	u8 touch_sta[10]={0};
+main.c(34): warning:  #177-D: variable "pre_id"  was declared but never referenced
+  	u8 pre_id[10]={0};
+main.c(35): warning:  #177-D: variable "id_send"  was declared but never referenced
+  	u8 id_send[10]={0};
+main.c(36): warning:  #177-D: variable "tempBuf"  was declared but never referenced
+    u8 tempBuf[61];
+main.c: 12 warnings, 0 errors
+compiling system_stm32f10x.c...
+compiling ctiic.c...
+compiling key.c...
+compiling sys.c...
+compiling lcd.c...
+compiling touch.c...
+compiling gt1151.c...
+..\HARDWARE\TOUCH\gt1151.c(73): warning:  #550-D: variable "buf"  was set but never used
+  	u8 buf[3];
+..\HARDWARE\TOUCH\gt1151.c(74): warning:  #177-D: variable "i"  was declared but never referenced
+  	u8 i=0;
+..\HARDWARE\TOUCH\gt1151.c(75): warning:  #550-D: variable "ret"  was set but never used
+  	u8 ret = 0;
+..\HARDWARE\TOUCH\gt1151.c(189): warning:  #111-D: statement is unreachable
+  	return 1;
+..\HARDWARE\TOUCH\gt1151.c: 4 warnings, 0 errors
+compiling ft3517U.c...
+..\HARDWARE\TOUCH\ft3517U.c(103): warning:  #111-D: statement is unreachable
+  	return 1;
+..\HARDWARE\TOUCH\ft3517U.c(143): warning:  #186-D: pointless comparison of unsigned integer with zero
+          if(tp_dev.x[i] > 4095 || tp_dev.x[i] < 0){
+..\HARDWARE\TOUCH\ft3517U.c(147): warning:  #186-D: pointless comparison of unsigned integer with zero
+          if(tp_dev.y[i] > 4095 || tp_dev.y[i] < 0){
+..\HARDWARE\TOUCH\ft3517U.c(230): warning:  #111-D: statement is unreachable
+      return 0;
+..\HARDWARE\TOUCH\ft3517U.c(232): warning:  #111-D: statement is unreachable
+    return 0;
+..\HARDWARE\TOUCH\ft3517U.c(115): warning:  #177-D: variable "temp"  was declared but never referenced
+    u8 temp = 0;
+..\HARDWARE\TOUCH\ft3517U.c(116): warning:  #177-D: variable "temp_id"  was declared but never referenced
+    u8 temp_id = 0;
+..\HARDWARE\TOUCH\ft3517U.c(118): warning:  #177-D: variable "temp_sta"  was declared but never referenced
+    u8 temp_sta = 0x06;
+..\HARDWARE\TOUCH\ft3517U.c: 8 warnings, 0 errors
+assembling startup_stm32f10x_hd.s...
+compiling delay.c...
+compiling ft5206.c...
+compiling usart.c...
+compiling core_cm3.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling misc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_exti.c...
+compiling usb_init.c...
+compiling usb_core.c...
+compiling usb_mem.c...
+compiling usb_int.c...
+compiling usb_sil.c...
+compiling usb_regs.c...
+compiling hw_config.c...
+..\USB\CONFIG\hw_config.c(194): warning:  #177-D: variable "m"  was declared but never referenced
+   u32 m;
+..\USB\CONFIG\hw_config.c: 1 warning, 0 errors
+compiling usb_desc.c...
+compiling usb_endp.c...
+compiling usb_istr.c...
+compiling usb_prop.c...
+compiling usb_pwr.c...
+linking...
+Program Size: Code=12432 RO-data=688 RW-data=492 ZI-data=1956  
+FromELF: creating hex file...
+"..\OBJ\TOUCH.axf" - 0 Error(s), 25 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
